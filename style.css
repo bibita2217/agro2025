@@ -93,3 +93,12 @@ header {
   border-radius: 4px;
   display: inline-block;
 }
+footer {
+  background-color: #0050d9; /* mesma cor do header */
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+  position: relative; /* para não interferir em outros elementos */
+  margin-top: 40px; /* espaçamento em cima */
+}

@@ -8,45 +8,50 @@
 </head>
 <body>
 
-  <!-- Cabeçalho -->
+  <!-- Cabeçalho com navegação -->
   <header>
-    <nav aria-label="Menu principal">
+    <nav aria-label="Navegação principal">
       <ul class="navbar">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Leilões</a></li>
-        <li><a href="#">Como funciona</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#leiloes">Leilões</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#login">Login</a></li>
       </ul>
     </nav>
-    <div class="hero" role="banner">
-      <h1>Leilões de Gado</h1>
-      <p>Participe de leilões de gado de qualidade</p>
-    </div>
   </header>
 
+  <!-- Seção Hero (chamada principal) -->
+  <section class="hero" role="region" aria-label="Apresentação do site" id="inicio">
+    <h1>Leilões de Gado</h1>
+    <p>Participe de leilões de gado com qualidade garantida.</p>
+  </section>
+
   <!-- Conteúdo principal -->
-  <main>
+  <main id="leiloes">
     <h2>Leilões Ativos</h2>
 
-    <section class="leilao" aria-labelledby="lote-nelore">
-      <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Boi_bezerro_mercado.jpg/320px-Boi_bezerro_mercado.jpg" 
-        alt="Foto de um lote de gado Nelore disponível para leilão" 
-        width="320" height="240">
-      
+    <article class="leilao" role="region" aria-labelledby="titulo-lote-1">
+      <figure>
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Boi_bezerro_mercado.jpg/320px-Boi_bezerro_mercado.jpg" 
+          alt="Imagem de um lote de gado Nelore à venda em leilão" 
+          width="320" height="240">
+        <figcaption>Imagem ilustrativa do lote de Nelore</figcaption>
+      </figure>
+
       <div class="info">
-        <h3 id="lote-nelore">Lote de Nelore</h3>
-        <p>Termina em <time datetime="PT2H15M">2 horas e 15 minutos</time></p>
-        <p>Lance atual:</p>
-        <p class="valor" aria-label="Lance atual de 5 mil reais">R$ 5.000</p>
-        <button type="button" aria-label="Dar lance no lote de Nelore">Dar lance</button>
+        <h3 id="titulo-lote-1">Lote de Nelore</h3>
+        <p><strong>Término:</strong> <time datetime="PT2H15M">em 2 horas e 15 minutos</time></p>
+        <p><strong>Lance atual:</strong></p>
+        <p class="valor" aria-label="Lance atual de cinco mil reais">R$ 5.000</p>
+        <button type="button" aria-label="Dar lance no Lote de Nelore">Dar lance</button>
       </div>
-    </section>
+    </article>
   </main>
 
   <!-- Rodapé -->
   <footer role="contentinfo">
-    <p>Desenvolvido por <strong>Beatriz</strong></p>
+    <p>Site desenvolvido por <strong>Beatriz</strong>.</p>
   </footer>
 
 </body>

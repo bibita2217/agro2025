@@ -5,7 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leilões de Gado</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Botão de contraste */
+    #botao-contraste {
+      position: fixed;
+      top: 50px;
+      right: 10px;
+      padding: 10px;
+      background: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .contraste {
+      background-color: #000 !important;
+      color: #fff !important;
+    }
+
+    .contraste img {
+      filter: brightness(0.8) contrast(1.2);
+    }
+  </style>
 </head>
+
 <body>
 
   <header role="banner">
@@ -25,7 +49,7 @@
     <h2>Leilões ativos</h2>
 
     <section class="leilao" aria-labelledby="titulo-leilao">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Boi_bezerro_mercado.jpg/320px-Boi_bezerro_mercado.jpg" 
+      <img src="WhatsApp Image 2025-07-03 at 16.32.25.jpeg" 
            alt="Gado em curral durante leilão" />
       <div class="info">
         <h3 id="titulo-leilao">lote de Nelore</h3>
